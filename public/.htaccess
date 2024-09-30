@@ -5,6 +5,11 @@ RewriteEngine on
 # ROUTES
 #---------------------------------------------------
 
+#ROUTE DU DETAIL D'UN POST
+#PATTERN: /posts/id/slug-du-post.html
+#URL: ???
+RewriteRule ^posts/([1-9][0-9]*)/[a-z0-9\-]+$ index.php?posts=show&id=$1 [L]
+
 
 
 # --------------------------------------------------

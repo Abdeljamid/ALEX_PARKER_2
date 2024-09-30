@@ -3,8 +3,7 @@
 
 
 // ROUTES BOOKS
-if (isset($_GET['books'])):
-    include_once '../app/routers/books.php';
+
 
 
 // ROUTES
@@ -16,6 +15,9 @@ if (isset($_GET['books'])):
 // 			CTRL: ???
 // 			ACTION: ???
 // 			TITLE: Alex Parker - Title du post
+
+if (isset($_GET['posts'])):
+    include_once '../app/routers/posts.php';
 
 // 	ROUTE D'AJOUT D'UN POST: affichage du formulaire
 // 			PATTERN: /posts/add/form.html
