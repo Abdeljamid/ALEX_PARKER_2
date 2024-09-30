@@ -19,7 +19,7 @@
                   <!-- ADD A POST END -->
 
                   <!-- Blog Post Start -->
-                    <?php echo $content ?>
+                    <?php echo $content; ?>
                   <!-- Blog Post End -->
 
                   <nav aria-label="Page navigation example" style="text-align: center;">
