@@ -13,7 +13,7 @@
     <title>DevBlog - Personal Blog Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="shortcut icon" href="images/favicon/my-favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <!-- Google Web Fonts  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700"

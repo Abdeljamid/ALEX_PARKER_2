@@ -8,7 +8,9 @@ switch ($_GET['posts']):
     case 'show':
         PostsController\showAction($connexion, $_GET['id']);
         break;
-    // default:
-    //     PostsController\indexAction($connexion);
-    //     break;
+    case 'addForm':
+        PostsController\addFormAction($connexion);
+        break;
+    default:    
+        PostsController\indexAction($connexion);
 endswitch;
