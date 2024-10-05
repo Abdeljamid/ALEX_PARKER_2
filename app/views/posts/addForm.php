@@ -30,7 +30,7 @@
                     <!-- Post Headline End -->
 
                     <!-- Form Start -->
-                    <form action="">
+                    <form action="posts/add/insert.html" method="POST">
                       <div class="form-group">
                         <label for="title">Title</label>
                         <input
@@ -54,6 +54,7 @@
                       <div class="form-group">
                         <label for="exampleFormControlFile1"> Image</label>
                         <input
+                          name="image"
                           type="file"
                           class="form-control-file btn btn-primary"
                           id="exampleFormControlFile1"
@@ -79,8 +80,11 @@
                           <option disabled selected>
                             Select your category
                           </option>
-                          <option value="1">Life style</option>
-                          <option value="2">Sport</option>
+                          <?php include_once "../app/models/categoriesModel.php";
+                          $categories = \App\Models\CategoriesModel\findAll($connexion);
+                          foreach($categories AS $category) :?>
+                          <option value="<?php echo $category['id']; ?>"  ><?php echo $category['name'];?></option>
+                          <?php endforeach ?>
                         </select>
                       </div>
                       <div>

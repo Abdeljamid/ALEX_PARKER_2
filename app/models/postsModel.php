@@ -32,14 +32,15 @@ function findOneById(PDO $connexion, $id): array
 function createOne(PDO $connexion, array $data): bool
 {
 
-    $sql = "INSERT INTO posts
-            SET name = :name,
-            created_at = NOW();";
+    $sql = "INSERT INTO posts (title, text, quote, created_at, category_id)
+            VALUES (:title, :text, :quote, NOW(), :category_id)";
 
     $rs = $connexion->prepare($sql);
-    $rs->bindValue(':name', $data['name'],PDO::PARAM_STR);
-       
+    $rs->bindValue(':title', $data['title'], PDO::PARAM_STR);
+    $rs->bindValue(':text', $data['text'], PDO::PARAM_STR);
+    $rs->bindValue(':quote', $data['quote'], PDO::PARAM_STR);
+    $rs->bindValue(':category_id', $data['category_id'], PDO::PARAM_INT);
+    $rs->execute();
     return $connexion->lastInsertId();
-    $rs->execute(); 
-    
 }
+

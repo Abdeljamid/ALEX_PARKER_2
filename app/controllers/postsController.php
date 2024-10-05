@@ -47,3 +47,18 @@ function addFormAction(PDO $connexion){
     $content = ob_get_clean();
 
 }
+function addAction(PDO $connexion, array $data) {
+    if (!empty($data['title']) && !empty($data['text'])) { // Vérifie que les données ne sont pas vides
+        include_once "../app/models/postsModel.php";include_once "../app/models/postsModel.php";
+        $success = PostsModel\createOne($connexion, $data);
+        if ($success) {
+            header('Location: ' . BASE_PUBLIC_URL . 'posts'); // Redirige après succès
+            exit; // Assure-toi de sortir après la redirection
+        } else {
+            // Gère l'erreur d'insertion ici (afficher un message, etc.)
+            echo "Erreur lors de l'ajout du post.";
+        }
+    } else {
+        echo "Les données du formulaire sont manquantes.";
+    }
+}
