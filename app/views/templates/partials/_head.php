@@ -11,7 +11,7 @@
     <meta name="robots" content="index,follow" />
 
     <title>DevBlog - Personal Blog Template</title>
-
+    <base href="<?php echo BASE_PUBLIC_URL ; ?>">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon/my-favicon.ico" />
     <link
@@ -33,7 +33,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700"
     />
-    <base href="<?php echo BASE_PUBLIC_URL ; ?>">
+    
 
     <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
     <!--[if lt IE 9]>

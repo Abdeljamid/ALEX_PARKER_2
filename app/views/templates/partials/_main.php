@@ -18,9 +18,7 @@
                     <?php echo $content; ?>
                   <!-- Blog Post End -->
 
-                  <nav aria-label="Page navigation example" style="text-align: center;">
-                  <?php include "../app/views/templates/partials/_nav.php"; ?>
-                  </nav>
+
 
                 </div>
               </div>

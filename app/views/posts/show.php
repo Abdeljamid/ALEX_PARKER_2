@@ -1,4 +1,4 @@
-<?php include "../app/views/templates/partials/_head.php"; ?>
+
 
               <div class="row">
                 <div class="sub-title">

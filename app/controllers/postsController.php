@@ -47,13 +47,13 @@ function addAction(PDO $connexion, array $data) {
 
         include_once "../app/models/postsModel.php";
         $id = PostsModel\createOne($connexion, $data);
-        header('Location: ' . BASE_PUBLIC_URL . 'posts');
+        header('Location: ' . BASE_PUBLIC_URL . 'posts.html');
 
 }
 function updateAction(PDO $connexion, int $id, array $data) {
         include_once '../app/models/postsModel.php';
         $response = PostsModel\updateOneById($connexion, $id, $data);
-        header('Location: ' . BASE_PUBLIC_URL . 'posts');
+        header('Location: ' . BASE_PUBLIC_URL . 'posts.html');
 }
 
 function editFormAction(PDO $connexion, int $id)
@@ -71,6 +71,6 @@ function deleteAction(PDO $connexion, int $id) {
     
     include_once "../app/models/postsModel.php";
     $response = PostsModel\deleteOneById($connexion, $id);
-    header('Location: ' . BASE_PUBLIC_URL . 'posts');
+    header('Location: ' . BASE_PUBLIC_URL . 'posts.html');
     exit();
 }
