@@ -14,6 +14,6 @@ function findAll(PDO $connexion): array
             ORDER BY categories.name ASC";
 
     return $connexion->query($sql)->fetchAll(PDO::FETCH_ASSOC);
-    
+
 }
- 
+

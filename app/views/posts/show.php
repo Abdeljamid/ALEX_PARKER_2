@@ -45,15 +45,13 @@
 
                     <!-- Post Buttons -->
                     <div>
-                      <a href="form.html" type="button" class="btn btn-primary"
-                        >Edit Post</a
-                      >
-                      <a
+                    <a href="posts/<?php echo $post['id']; ?>/<?php echo \Core\Helpers\slugify($post['title']); ?>/edit/form.html" type="button" class="btn btn-primary">Edit Post</a>
+                      <a²
                         href="#"
                         type="button"
                         class="btn btn-secondary"
                         role="button"
-                        >Delete Post</a
+                        >Delete Post</a²
                       >
                     </div>
                     <!-- Post Buttons End -->

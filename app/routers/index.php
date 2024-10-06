@@ -11,7 +11,7 @@ if (isset($_GET['posts'])):
 
 
     
-// 	ROUTE PAR DEFAUT: liste des posts
+// 	ROUTE PAR DEFAUT: liste des posts²
 // 		PATTERN: /
 // 		CTRL: ???
 // 		ACTION: ???
