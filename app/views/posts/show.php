@@ -46,12 +46,12 @@
                     <!-- Post Buttons -->
                     <div>
                     <a href="posts/<?php echo $post['id']; ?>/<?php echo \Core\Helpers\slugify($post['title']); ?>/edit/form.html" type="button" class="btn btn-primary">Edit Post</a>
-                      <a²
-                        href="#"
+                      <a
+                        href="posts/<?php echo $post['id']; ?>/<?php echo \Core\Helpers\slugify($post['title']); ?>/delete.html"
                         type="button"
                         class="btn btn-secondary"
                         role="button"
-                        >Delete Post</a²
+                        >Delete Post</a
                       >
                     </div>
                     <!-- Post Buttons End -->
